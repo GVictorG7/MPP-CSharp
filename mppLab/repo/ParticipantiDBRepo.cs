@@ -29,8 +29,8 @@ namespace mppLab.repo
 			utils.OpenConnection();
 			string query = "INSERT INTO participanti VALUES(" + participant.Id + ",'" + participant.Nume + "','" + participant.Echipa + "'," + participant.Cap + "," + resultId + ")";
 			MySqlCommand cmd1 = new MySqlCommand(query, utils.Connection);
-			var result = cmd1.ExecuteNonQuery();
-			utils.CloseConnection();
+            cmd1.ExecuteNonQuery();
+            utils.CloseConnection();
 		}
 
 		public void Delete(int id) { }

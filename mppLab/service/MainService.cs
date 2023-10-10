@@ -7,7 +7,6 @@ namespace mppLab.service
 	class MainService
 	{
 		private CurseDBRepo repoCurse = new CurseDBRepo();
-		private OperatorDBRepo repoOperatori = new OperatorDBRepo();
 		private ParticipantiDBRepo repoParticipanti = new ParticipantiDBRepo();
 
 		public void SavePartcipant(int id, string nume, string echipa, int cap, int idCursa)
